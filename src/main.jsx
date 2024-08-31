@@ -8,6 +8,7 @@ import {
 import Root from "./routes/root";
 import ErrorPage from "./error-page";
 import PDFView from "./routes/pdf-view";
+import AboutMe from "./routes/about-me";
 
 const router = createBrowserRouter([
   {
@@ -18,7 +19,11 @@ const router = createBrowserRouter([
       {
         path: "/pdf-view",
         element: <PDFView />
-      }
+      },
+      {
+        path:"/about-me",
+        element: <AboutMe />
+      },
     ]
   },
 ]);

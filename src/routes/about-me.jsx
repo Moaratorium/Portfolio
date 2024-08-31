@@ -1,4 +1,4 @@
-export default function aboutMe() {
+export default function AboutMe() {
     const blurb = {
         text: `${import.meta.env.VITE_aboutme}`,
         name: `${import.meta.env.VITE_name}`
