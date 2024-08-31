@@ -8,13 +8,16 @@ export default function Root() {
           <nav>
             <ul>
               <li>
-                <Link to={'pdf-view'}>Resume</Link>
+                <Link to={'about-me'}>About Me</Link>
+              </li>
+            <li>
+                <Link to={import.meta.env.VITE_github}>GitHub</Link>
               </li>
               <li>
-                <Link to={`placeholder`}>Substack</Link>
+                <Link to={import.meta.env.VITE_blog}>Blog</Link>
               </li>
               <li>
-                <Link to={'placeholder'}>GitHub</Link>
+              <Link to={'pdf-view'}>Resume</Link>
               </li>
             </ul>
           </nav>
