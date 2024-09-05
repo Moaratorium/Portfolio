@@ -4,11 +4,12 @@ import './index.css';
 import {
   createBrowserRouter,
   RouterProvider,
+  Navigate
 } from "react-router-dom";
 import Root from "./routes/root";
 import ErrorPage from "./error-page";
 import PDFView from "./routes/pdf-view";
-import AboutMe from "./routes/about-me";
+import AboutMe from "./routes/about";
 
 const router = createBrowserRouter([
   {
@@ -17,11 +18,14 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
+        index: true, element: <Navigate to="/about" replace />
+      },
+      {
         path: "/pdf-view",
         element: <PDFView />
       },
       {
-        path:"/about-me",
+        path:"/about",
         element: <AboutMe />
       },
     ]
