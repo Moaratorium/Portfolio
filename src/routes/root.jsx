@@ -6,7 +6,7 @@ export default function Root() {
         <div id='parent'>
           
         <div id="sidebar">
-          <h1>Portfolio Directory</h1>
+          <h1>Directory</h1>
           <nav>
             <ul>
               <li>
@@ -19,7 +19,7 @@ export default function Root() {
                 <Link to={import.meta.env.VITE_blog}>Blog</Link>
               </li>
               <li>
-              <Link to={'pdf-view'}>Resume</Link>
+              <Link to={'pdf-view'}>Full Resume</Link>
               </li>
             </ul>
           </nav>
