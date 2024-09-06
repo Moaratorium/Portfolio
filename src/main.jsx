@@ -1,6 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
+import 'dotenv-json';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -10,6 +11,7 @@ import Root from "./routes/root";
 import ErrorPage from "./error-page";
 import PDFView from "./routes/pdf-view";
 import AboutMe from "./routes/about";
+import '@fontsource-variable/jetbrains-mono';
 
 const router = createBrowserRouter([
   {
@@ -30,7 +32,7 @@ const router = createBrowserRouter([
       },
     ]
   },
-]);
+]); 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

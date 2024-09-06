@@ -1,11 +1,11 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'JetBrains Mono Variable', monospace, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 200;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #161627;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,12 +13,29 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Sidebar */
+
 #sidebar {
-  width: 20vw;
-  height: 100%;
+  width: 16vw;
+  height: 100vh;
   overflow-x: hidden;
   top: 0;
   left: 0;
+  border-right: 3px solid rgba(252, 252, 252, 0.603);
+  background: linear-gradient(to left, #25253fc2, #161627);
+  position: fixed;
+}
+
+#sidebar>h1 {
+  text-align: center;
+}
+
+#sidebar>nav>ul {
+  list-style: none;
+}
+
+#resume-link>span {
+  margin-left: 1em;
 }
 
 #parent {
@@ -27,9 +44,17 @@
   display: inline-flex;
 }
 
+/* Global Detail */
+
 #detail {
   width: 70vw;
   text-align: center;
+  margin-left: 22vw;
+  overflow-x: hidden;
+}
+
+#aboutme-text>h2 {
+  text-align: left;
 }
 
 #pdfframe {
@@ -46,6 +71,8 @@ iframe {
   padding-bottom: 4vh;
 }
 
+/* Document Body */
+
 body {
   margin: 1.5vw;
   min-width: 320px;
@@ -56,6 +83,13 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Themes */
 
 @media (prefers-color-scheme: light) {
   :root {
