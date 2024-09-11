@@ -16,7 +16,7 @@ export default function Root() {
                 <Link to={import.meta.env.VITE_github}>GitHub</Link>
               </li>
               <li>
-                <Link to={import.meta.env.VITE_blog}>Blog</Link>
+                <Link to={import.meta.env.VITE_blog}>{import.meta.env.VITE_blog_name}</Link>
               </li>
               <li>
               <Link to={'pdf-view'}>Full Resume</Link>
