@@ -1,10 +1,11 @@
 :root {
-  font-family: 'JetBrains Mono Variable', monospace, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Helvetica, monospace, system-ui, Avenir, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 200;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: rgb(247, 226, 213);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   background-color: #161627;
 
   font-synthesis: none;
@@ -26,7 +27,11 @@
   position: fixed;
 }
 
-#sidebar>h1 {
+#sidebar-head {
+  margin: 10%;
+}
+
+#sidebar-head>.center-align {
   text-align: center;
 }
 
@@ -55,6 +60,12 @@
 
 #aboutme-text>h2 {
   text-align: left;
+}
+
+#profile-image {
+  width: auto;
+  max-height: 30vh;
+  opacity: .8;
 }
 
 #pdfframe {

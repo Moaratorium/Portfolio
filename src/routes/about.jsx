@@ -11,8 +11,10 @@ export default function About() {
     // define imported projects
     return (
         <div id="about-container">
+            <div id="portrait-container">
+            <img id="profile-image" src={import.meta.env.VITE_profile_image}></img>
+            </div>
         <div id="aboutme-text">
-            <h1>About Me:</h1>
             <h2>{blurb.text}</h2>
         </div>
         <div id="work-history">

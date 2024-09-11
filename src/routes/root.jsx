@@ -6,7 +6,11 @@ export default function Root() {
         <div id='parent'>
           
         <div id="sidebar">
-          <h1>Directory</h1>
+          <div id="sidebar-head">
+          <h1 className="center-align">{import.meta.env.VITE_name}</h1>
+          <h2 className="center-align">{import.meta.env.VITE_title}</h2>
+          <p>{import.meta.env.VITE_name_caption}</p>
+          </div>
           <nav>
             <ul>
               <li>
