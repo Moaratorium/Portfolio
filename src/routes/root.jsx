@@ -1,10 +1,11 @@
 import {Outlet, Link} from "react-router-dom";
-import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons"
+//import {ProjectList} from "../../components/project-list";
 
 export default function Root() {
     return (
         <div id='parent'>
-          
         <div id="sidebar">
           <div id="sidebar-head">
           <h1 className="center-align">{import.meta.env.VITE_name}</h1>
@@ -27,6 +28,14 @@ export default function Root() {
               </li>
             </ul>
           </nav>
+          <div id="theme-toggle">
+          <input type="checkbox" className="checkbox" id="checkbox"></input>
+          <label htmlFor="checkbox" className="checkbox-label">
+          <FontAwesomeIcon icon={faSun} />
+          <FontAwesomeIcon icon={faMoon} />
+          <span className="cover"></span>
+        </label>
+          </div>
         </div>
         <div id='detail'>
             <Outlet />
