@@ -1,6 +1,5 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import './index.css';
 import 'dotenv-json';
 import {
   createBrowserRouter,
@@ -12,6 +11,25 @@ import ErrorPage from "./error-page";
 import PDFView from "./routes/pdf-view";
 import AboutMe from "./routes/about";
 import '@fontsource-variable/jetbrains-mono';
+
+export function getTheme() {
+  if(!localStorage.getItem("theme")) {
+    console.log('no theme')
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+      localStorage.setItem("theme", "light");
+      console.log('setting light theme')
+    }
+    else {
+      localStorage.setItem("theme", "dark")
+      console.log('setting dark theme')
+    }
+  }
+  let currentTheme = localStorage.getItem("theme");
+  document.getElementById("body").classList.remove('light', 'dark')
+  document.getElementById("body").classList.add(currentTheme);
+  console.log('setting class')
+}
+getTheme();
 
 const router = createBrowserRouter([
   {

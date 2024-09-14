@@ -1,7 +1,8 @@
 import {Outlet, Link} from "react-router-dom";
+import { ThemeToggle } from "../../components/theme-toggle";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons"
-//import {ProjectList} from "../../components/project-list";
+import { faSquareGithub } from '@fortawesome/free-brands-svg-icons'
+import { faSquarePen, faBook, faArrowTrendUp } from "@fortawesome/free-solid-svg-icons"
 
 export default function Root() {
     return (
@@ -15,27 +16,20 @@ export default function Root() {
           <nav>
             <ul>
               <li>
-                <Link to={'about'}>About</Link>
+                <Link to={'about'}><FontAwesomeIcon icon={faBook} /> About</Link>
               </li>
             <li>
-                <Link to={import.meta.env.VITE_github}>GitHub</Link>
+                <Link to={import.meta.env.VITE_github}><FontAwesomeIcon icon={faSquareGithub} /> GitHub</Link>
               </li>
               <li>
-                <Link to={import.meta.env.VITE_blog}>{import.meta.env.VITE_blog_name}</Link>
+                <Link to={import.meta.env.VITE_blog}><FontAwesomeIcon icon={faSquarePen} /> {import.meta.env.VITE_blog_name}</Link>
               </li>
               <li>
-              <Link to={'pdf-view'}>Full Resume</Link>
+              <Link to={'pdf-view'}><FontAwesomeIcon icon={faArrowTrendUp} /> Full Resume</Link>
               </li>
             </ul>
           </nav>
-          <div id="theme-toggle">
-          <input type="checkbox" className="checkbox" id="checkbox"></input>
-          <label htmlFor="checkbox" className="checkbox-label">
-          <FontAwesomeIcon icon={faSun} />
-          <FontAwesomeIcon icon={faMoon} />
-          <span className="cover"></span>
-        </label>
-          </div>
+          <ThemeToggle />
         </div>
         <div id='detail'>
             <Outlet />
