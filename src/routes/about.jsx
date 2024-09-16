@@ -1,26 +1,22 @@
-import 'dotenv-json';
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowTrendUp } from "@fortawesome/free-solid-svg-icons"
+import { ProjectList } from "../../components/project-list"
+import config from '../../config.json'
 
 export default function About() {
-    const blurb = {
-        text: `${import.meta.env.VITE_aboutme}`,
-        name: `${import.meta.env.VITE_name}`,
-    };
-    // define imported projects
     return (
         <div id="about-container">
             <div id="portrait-container">
-            <img id="profile-image" src={import.meta.env.VITE_profile_image}></img>
+            <img id="profile-image" src={config.database.profileImageLink}></img>
             </div>
         <div id="aboutme-text">
-            <h2>{blurb.text}</h2>
+            <h2>{config.database.aboutText}</h2>
         </div>
         <div id="work-history">
             <h1>My Projects</h1>
             <div id="project-list">
-                <p></p>
+                <ProjectList />
                 </div>
                 <div id="resume-link">
                 <Link to={'../pdf-view'}>Link to Full Résumé<span> </span>
