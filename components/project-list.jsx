@@ -2,7 +2,7 @@ import { TagMaker } from "./tag-maker";
 import config from '../config.json';
 
 export function ProjectList() {
-    const projectList = config.database.projects;
+    const projectList = config.datastore.projects;
     return (
         projectList.map(item => {
             return (
