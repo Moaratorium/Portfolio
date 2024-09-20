@@ -11,7 +11,7 @@ export default function About() {
             <img id="profile-image" src={config.datastore.profileImageLink}></img>
             </div>
         <div id="aboutme-text">
-            <h2>{config.datastore.aboutText}</h2>
+            <p>{config.datastore.aboutText}</p>
         </div>
         <div id="work-history">
             <h1>My Projects</h1>

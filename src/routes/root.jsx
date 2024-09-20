@@ -10,8 +10,8 @@ export default function Root() {
         <div id='parent'>
         <div id="sidebar">
           <div id="sidebar-head">
-          <h1 id="name-plate" className="center-align">{config.datastore.name}</h1>
-          <h2 id="title-plate" className="center-align">{config.datastore.title}</h2>
+          <h1 id="name-plate">{config.datastore.name}</h1>
+          <h2 id="title-plate">{config.datastore.title}</h2>
           <p id="sidebar-caption">{config.datastore.nameCaption}</p>
           </div>
           <nav>
@@ -20,7 +20,7 @@ export default function Root() {
                 <Link to={'about'}><FontAwesomeIcon icon={faBook} /> About</Link>
               </li>
             <li>
-                <Link to={config.datastore.githubLink}><FontAwesomeIcon icon={faSquareGithub} /> GitHub</Link>
+                <Link to={config.datastore.githubLink} ><FontAwesomeIcon icon={faSquareGithub} /> GitHub</Link>
               </li>
               <li>
                 <Link to={config.datastore.blogLink}><FontAwesomeIcon icon={faSquarePen} /> {config.datastore.blogName}</Link>
