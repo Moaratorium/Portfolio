@@ -19,7 +19,7 @@ export default function About() {
                 <ProjectList />
                 </div>
                 <div id="resume-link">
-                <Link to={'../pdf-view'}>Link to Full Résumé<span> </span>
+                <Link to={'../pdf-view'}>Resume PDF Link<span> </span>
                 <FontAwesomeIcon icon={faArrowTrendUp} />
                 </Link>
                 </div>
