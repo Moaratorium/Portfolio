@@ -10,7 +10,7 @@ export default function About() {
             <div id="portrait-container">
             <img id="profile-image" src={config.datastore.profileImageLink}></img>
             </div>
-        <div id="aboutme-text">
+        <div id="aboutme-text" style={{ whiteSpace: 'break-spaces'}}>
             <p>{config.datastore.aboutText}</p>
         </div>
         <div id="work-history">
