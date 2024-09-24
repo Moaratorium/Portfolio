@@ -5,7 +5,6 @@
   font-size: 1em;
 
   color-scheme: dark light;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
   --background-dark: #121212;
   --background-light: #afbec4;
@@ -83,18 +82,18 @@ html {
   transform: translateX(24px);
 }
 
-
 /* Sidebar */
 
 #sidebar {
-  width: 16%;
+  width: 15vw;
   display: flex;
+  position: sticky;
+  height: 100vh;
   align-items: stretch;
   overflow-x: hidden;
   top: 0;
   left: 0;
-  border-right: 3px solid var(--border-dark);
-  background: linear-gradient(to left, var(--background-dark)5%, var(--raised-dark));
+  background: var(--background-dark);
   flex-direction: column;
 }
 
@@ -112,6 +111,8 @@ html {
 
 #resume-link {
   padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
 }
 
 #resume-link span {
@@ -119,7 +120,8 @@ html {
 }
 
 #parent {
-  width: 100vw;
+  width: 60vw;
+  margin: auto;
   height: 100%;
   display: flex;
 }
@@ -128,20 +130,25 @@ html {
 
 #detail {
   width: 70%;
-  text-align: center;
+  text-align: left;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 5vh;
   display: flex;
+  padding-left: 10vw;
 }
 
-#aboutme-text>h2 {
+#aboutme-text>p {
   text-align: left;
+  padding-top: 0;
 }
 
-#profile-image {
-  width: auto;
+#profile-image { 
   max-height: 30vh;
+  float: left;
+  padding-left: 1vw;
+  padding-right: 1vw;
 }
 
 #pdfframe {
@@ -183,12 +190,14 @@ a {
 /* Tags */
 .tag {
   width: fit-content;
+  min-width: 30px;
   height: auto;
   padding: .3em;
   border-radius: 30%;
   margin-right: 3px;
   font-size: .8rem;
   font-style: oblique;
+  text-align: center;
 }
 
 .tag-holder {
@@ -223,8 +232,7 @@ body.light {
 }
 
 body.light #sidebar {
-  background: linear-gradient(to right, var(--raised-light), var(--background-light));
-  border-right: 3px solid var(--border-light);
+  background: var(--background-light);
 }
 
 body.light img {
@@ -240,10 +248,18 @@ body.light img {
   #parent {
     display: flex;
     flex-direction: column;
+    width: 90vw;
+  }
+
+  #detail {
+    text-align: center;
+    padding-left: inherit;
+    margin-top: auto;
   }
 
   #sidebar {
     display: flex;
+    position: relative;
     flex-direction: column;
     width: 100%;
     height: 20%;
@@ -252,10 +268,27 @@ body.light img {
 
   #sidebar-head {
     margin: 0;
+    text-align: center;
+  }
+
+  #profile-image {
+    float: none;
+  }
+
+  #aboutme-text>p {
+    padding-top: inherit;
   }
 
   #name-plate {
     margin-bottom: 0;
+  }
+
+  .tag {
+    font-size: .6em;
+  }
+
+  .project-details {
+    text-align: left;
   }
 
   #sidebar-caption {
@@ -266,8 +299,7 @@ body.light img {
 
   #sidebar nav {
     justify-content: center;
-    margin-right: 7%;
-    width: 30%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     text-align: justify;
@@ -275,10 +307,19 @@ body.light img {
 
   body.dark #sidebar {
     border-bottom: 1px solid var(--border-dark);
-    background: linear-gradient(to bottom, var(--background-dark)50%, var(--raised-dark)) 
+    background: var(--background-dark);
   }
 
   body.light #sidebar {
+    border-bottom: 1px solid var(--border-light);
+    border-right: none;
+  }
+
+  body.dark #aboutme-text {
+    border-bottom: 1px solid var(--border-dark);
+  }
+
+  body.light #aboutme-text {
     border-bottom: 1px solid var(--border-light);
   }
 }

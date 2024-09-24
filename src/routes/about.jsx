@@ -10,8 +10,8 @@ export default function About() {
             <div id="portrait-container">
             <img id="profile-image" src={config.datastore.profileImageLink}></img>
             </div>
-        <div id="aboutme-text">
-            <h2>{config.datastore.aboutText}</h2>
+        <div id="aboutme-text" style={{ whiteSpace: 'break-spaces'}}>
+            <p>{config.datastore.aboutText}</p>
         </div>
         <div id="work-history">
             <h1>My Projects</h1>
@@ -19,7 +19,7 @@ export default function About() {
                 <ProjectList />
                 </div>
                 <div id="resume-link">
-                <Link to={'../pdf-view'}>Link to Full Résumé<span> </span>
+                <Link to={'../pdf-view'}>Resume PDF Link<span> </span>
                 <FontAwesomeIcon icon={faArrowTrendUp} />
                 </Link>
                 </div>
