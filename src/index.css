@@ -6,14 +6,14 @@
 
   color-scheme: dark light;
 
-  --background-dark: #121212;
-  --background-light: #afbec4;
-  --text-dark: rgb(247, 226, 213);
-  --text-light: rgb(16, 20, 27);
+  --background-dark: #1f1f1f;
+  --background-light: #d3d4d9;
+  --text-dark: #8b8b8b;
+  --text-light: #212a31;
   --raised-dark: rgba(118, 143, 255, 0.082);
-  --raised-light: rgba(23, 30, 61, 0.308);
+  --raised-light: #748d9267;
   --border-dark: rgba(255, 255, 255, 0.63);
-  --border-light: rgba(16, 20, 27, 0.582);
+  --border-light: rgba(23, 48, 90, 0.582);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
