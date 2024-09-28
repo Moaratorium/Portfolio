@@ -1,0 +1,7 @@
+services:
+  portfolio:
+    image: profile:latest
+    container_name: profile
+    ports:
+      - "8080:80"
+      - "8081:443"
