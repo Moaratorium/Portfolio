@@ -6,7 +6,7 @@ WORKDIR /app
 # Copy package.json and package-lock.json to the working directory
 COPY package*.json .
 # Install dependencies
-RUN npm install
+RUN npm ci
 # Copy the entire application code to the container
 COPY . .
 # Build the React app for production
