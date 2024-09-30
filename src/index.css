@@ -9,7 +9,7 @@
   --background-dark: #282c34;
   --background-light: #fafafa;
   --text-dark: #abb2bf;
-  --text-light: #6a6a6a;
+  --text-light: #505050;
   --text-emphasis-dark: rgb(136, 243, 234);
   --text-emphasis-light: rgb(22, 77, 94);
   --raised-dark: rgba(118, 143, 255, 0.082);
@@ -124,10 +124,26 @@ body.light #name-plate {
   list-style: none;
 }
 
+body.dark nav {
+  color: var(--title-text-dark)
+}
+
+body.light nav {
+  color: var(--title-text-light)
+}
+
 #resume-link {
   padding-top: 5%;
   padding-bottom: 5%;
   text-align: center;
+}
+
+body.dark #resume-link {
+  color: var(--title-text-dark)
+}
+
+body.light #resume-link {
+  color: var(--title-text-light)
 }
 
 #resume-link span {
@@ -208,7 +224,7 @@ body.light #title-plate {
 #projects-title {
   text-align: center;
   text-decoration: underline;
-  color: #fff;
+  color: var(--title-text-light);
 }
 
 body.dark .project-header {

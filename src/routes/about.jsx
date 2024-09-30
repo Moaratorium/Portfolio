@@ -14,7 +14,6 @@ export default function About() {
             <p>{config.datastore.aboutText}</p>
         </div>
         <div id="work-history">
-            <h1 id="projects-title">My Projects</h1>
             <div id="project-list">
                 <ProjectList />
                 </div>
