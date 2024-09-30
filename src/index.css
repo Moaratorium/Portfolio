@@ -6,9 +6,9 @@
 
   color-scheme: dark light;
 
-  --background-dark: #333;
+  --background-dark: #282c34;
   --background-light: #fff;
-  --text-dark: #7f848e;
+  --text-dark: #abb2bf;
   --text-light: #212a31;
   --text-emphasis-dark: rgb(136, 243, 234);
   --text-emphasis-light: rgb(22, 77, 94);
@@ -16,8 +16,9 @@
   --raised-light: #748d9267;
   --border-dark: rgba(255, 255, 255, 0.63);
   --border-light: rgba(23, 48, 90, 0.582);
-  --subheader-dark: #979797;
+  --subheader-dark: #abb2bf;
   --subheader-light: #505050;
+  --title-text-dark: #fff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -29,6 +30,7 @@
 
 html {
   height: 100%;
+  color: var(--text-dark)
 }
 
 #root {
@@ -103,6 +105,10 @@ html {
 
 #sidebar-head {
   margin: 10%;
+}
+
+#name-plate {
+  color: var(--title-text-dark);
 }
 
 #sidebar-head>.center-align {
@@ -187,7 +193,7 @@ h1 {
 }
 
 body.dark #title-plate {
-  color: var(--text-emphasis-dark);
+  color: var(--title-text-dark);
 }
 
 body.light #title-plate {
@@ -197,19 +203,24 @@ body.light #title-plate {
 #projects-title {
   text-align: center;
   text-decoration: underline;
+  color: #fff;
 }
 
-body.dark .project-subheader {
-  color: var(--subheader-dark);
+body.dark .project-header {
+  color: var(--title-text-dark);
 }
 
-body.light .project-subheader {
+body.light .project-header {
   color: var(--subheader-light);
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+body.dark .project-details {
+  color: var(--subheader-dark)
 }
 
 /* Tags */
