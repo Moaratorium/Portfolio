@@ -6,14 +6,18 @@
 
   color-scheme: dark light;
 
-  --background-dark: #1f1f1f;
+  --background-dark: #333;
   --background-light: #fff;
-  --text-dark: #8b8b8b;
+  --text-dark: #7f848e;
   --text-light: #212a31;
+  --text-emphasis-dark: rgb(136, 243, 234);
+  --text-emphasis-light: rgb(22, 77, 94);
   --raised-dark: rgba(118, 143, 255, 0.082);
   --raised-light: #748d9267;
   --border-dark: rgba(255, 255, 255, 0.63);
   --border-light: rgba(23, 48, 90, 0.582);
+  --subheader-dark: #979797;
+  --subheader-light: #505050;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -182,6 +186,27 @@ h1 {
   line-height: 1.1;
 }
 
+body.dark #title-plate {
+  color: var(--text-emphasis-dark);
+}
+
+body.light #title-plate {
+  color: var(--text-emphasis-light);
+}
+
+#projects-title {
+  text-align: center;
+  text-decoration: underline;
+}
+
+body.dark .project-subheader {
+  color: var(--subheader-dark);
+}
+
+body.light .project-subheader {
+  color: var(--subheader-light);
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -198,6 +223,7 @@ a {
   font-size: .8rem;
   font-style: oblique;
   text-align: center;
+  color: var(--text-emphasis-dark);
 }
 
 .tag-holder {
@@ -213,6 +239,7 @@ body.dark .tag {
 body.light .tag {
   background-color: var(--raised-light);
   border: 1px solid var(--border-light);
+  color: var(--text-emphasis-light);
 }
 
 /* Dark Mode */
@@ -237,6 +264,13 @@ body.light #sidebar {
 
 body.light img {
   border: 1px solid (var(--border-light));
+}
+
+/* 1440p+ Monitors */
+@media (min-width: 2400px) {
+  body {
+    width: 68vw;
+  }
 }
 
 /* Mobile Styles */

@@ -7,7 +7,7 @@ export function ProjectList() {
         projectList.map(item => {
             return (
                 <div key={item.id} id={item.id}>
-                    <h2>{item.name}<br></br>{item.role}, {item.time}</h2>
+                    <h2 className="project-header">{item.name}<br></br><div className="project-subheader">{item.role}, {item.time}</div></h2>
                     <p className="project-details" style={{ whiteSpace: 'pre-line' }}>{item.description}</p>
                     <div className="tag-holder">
                     <TagMaker tags={item.tagList}/>
