@@ -113,6 +113,10 @@ html {
   margin-bottom: 0;
 }
 
+#sidebar-caption {
+  width: 90%;
+}
+
 #title-plate {
   margin-top: 4%;
   margin-bottom: 8%;
@@ -170,7 +174,7 @@ body.light #resume-link {
 }
 
 #parent {
-  width: 52vw;
+  width: 45vw;
   margin: auto;
   height: 100%;
   display: flex;
