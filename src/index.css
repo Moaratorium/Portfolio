@@ -187,10 +187,9 @@ body.light #resume-link {
   text-align: left;
   justify-content: center;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 0;
   margin-top: 5vh;
   display: flex;
-  
 }
 
 #aboutme-text>p {
@@ -199,10 +198,10 @@ body.light #resume-link {
 }
 
 #profile-image { 
-  max-height: 30vh;
+  max-height: 20vh;
   float: left;
-  padding-left: 1vw;
-  padding-right: 1vw;
+  padding-right: 3%;
+  padding-bottom: 1%
 }
 
 #pdfframe {
