@@ -345,6 +345,8 @@ body.light img {
     text-align: center;
     padding-left: inherit;
     margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #sidebar {
@@ -363,6 +365,8 @@ body.light img {
 
   #profile-image {
     float: none;
+    max-height: 40vh;
+    padding: 1%;
   }
 
   #aboutme-text>p {
@@ -389,10 +393,12 @@ body.light img {
 
   #sidebar nav {
     justify-content: center;
-    width: 50%;
+    width: 25%;
     margin-left: auto;
     margin-right: auto;
     text-align: justify;
+    margin-bottom: 1%;
+    padding-left: 2%;
   }
 
   body.dark #sidebar {
