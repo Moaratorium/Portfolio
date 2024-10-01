@@ -14,14 +14,10 @@ export default function About() {
             <p>{config.datastore.aboutText}</p>
         </div>
         <div id="work-history">
-            <h1>My Projects</h1>
             <div id="project-list">
                 <ProjectList />
                 </div>
-                <div id="resume-link">
-                <Link to={'../pdf-view'}>Resume PDF Link<span> </span>
-                <FontAwesomeIcon icon={faArrowTrendUp} />
-                </Link>
+                <div className="footer">
                 </div>
         </div>
         </div>

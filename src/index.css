@@ -6,14 +6,20 @@
 
   color-scheme: dark light;
 
-  --background-dark: #1f1f1f;
-  --background-light: #fff;
-  --text-dark: #8b8b8b;
-  --text-light: #212a31;
+  --background-dark: #282c34;
+  --background-light: #fafafa;
+  --text-dark: #abb2bf;
+  --text-light: #505050;
+  --text-emphasis-dark: rgb(136, 243, 234);
+  --text-emphasis-light: rgb(22, 77, 94);
   --raised-dark: rgba(118, 143, 255, 0.082);
   --raised-light: #748d9267;
   --border-dark: rgba(255, 255, 255, 0.63);
   --border-light: rgba(23, 48, 90, 0.582);
+  --subheader-dark: #abb2bf;
+  --subheader-light: #505050;
+  --title-text-dark: #fff;
+  --title-text-light: rgb(22, 77, 94);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -25,6 +31,7 @@
 
 html {
   height: 100%;
+  color: var(--text-dark)
 }
 
 #root {
@@ -98,7 +105,37 @@ html {
 }
 
 #sidebar-head {
-  margin: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+#name-plate {
+  margin-bottom: 0;
+}
+
+#sidebar-caption {
+  width: 90%;
+}
+
+#title-plate {
+  margin-top: 4%;
+  margin-bottom: 8%;
+  width: 100%;
+  padding-bottom: 0;
+  padding-top: 0;
+  line-height: 1;
+}
+
+.fa-arrow-trend-up {
+  width: .8em;
+}
+
+#name-plate {
+  color: var(--title-text-dark);
+}
+
+body.light #name-plate {
+  color: var(--title-text-light);
 }
 
 #sidebar-head>.center-align {
@@ -107,12 +144,29 @@ html {
 
 #sidebar>nav>ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-#resume-link {
-  padding-top: 5%;
-  padding-bottom: 5%;
-  text-align: center;
+body.dark nav {
+  color: var(--title-text-dark)
+}
+
+body.light nav {
+  color: var(--title-text-light)
+}
+
+.footer {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+body.dark #resume-link {
+  color: var(--title-text-dark)
+}
+
+body.light #resume-link {
+  color: var(--title-text-light)
 }
 
 #resume-link span {
@@ -120,7 +174,7 @@ html {
 }
 
 #parent {
-  width: 56vw;
+  width: 45vw;
   margin: auto;
   height: 100%;
   display: flex;
@@ -129,14 +183,13 @@ html {
 /* Global Detail */
 
 #detail {
-  width: 70%;
+  width: 55%;
   text-align: left;
   justify-content: center;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 0;
   margin-top: 5vh;
   display: flex;
-  padding-left: 6vw;
 }
 
 #aboutme-text>p {
@@ -145,10 +198,10 @@ html {
 }
 
 #profile-image { 
-  max-height: 30vh;
+  max-height: 20vh;
   float: left;
-  padding-left: 1vw;
-  padding-right: 1vw;
+  padding-right: 3%;
+  padding-bottom: 1%
 }
 
 #pdfframe {
@@ -182,9 +235,35 @@ h1 {
   line-height: 1.1;
 }
 
+body.dark #title-plate {
+  color: var(--title-text-dark);
+}
+
+body.light #title-plate {
+  color: var(--title-text-light);
+}
+
+#projects-title {
+  text-align: center;
+  text-decoration: underline;
+  color: var(--title-text-light);
+}
+
+body.dark .project-header {
+  color: var(--title-text-dark);
+}
+
+body.light .project-header {
+  color: var(--title-text-light);
+}
+
 a {
   text-decoration: none;
   color: inherit;
+}
+
+body.dark .project-details {
+  color: var(--subheader-dark)
 }
 
 /* Tags */
@@ -198,6 +277,7 @@ a {
   font-size: .8rem;
   font-style: oblique;
   text-align: center;
+  color: var(--text-emphasis-dark);
 }
 
 .tag-holder {
@@ -213,6 +293,7 @@ body.dark .tag {
 body.light .tag {
   background-color: var(--raised-light);
   border: 1px solid var(--border-light);
+  color: var(--text-emphasis-light);
 }
 
 /* Dark Mode */
@@ -239,6 +320,15 @@ body.light img {
   border: 1px solid (var(--border-light));
 }
 
+/* 1440p+ Monitors */
+@media (min-width: 2400px) {
+  body {
+    width: 68vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 /* Mobile Styles */
 @media (max-width: 1000px) {
   body {
@@ -255,6 +345,8 @@ body.light img {
     text-align: center;
     padding-left: inherit;
     margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #sidebar {
@@ -273,6 +365,8 @@ body.light img {
 
   #profile-image {
     float: none;
+    max-height: 40vh;
+    padding: 1%;
   }
 
   #aboutme-text>p {
@@ -299,10 +393,12 @@ body.light img {
 
   #sidebar nav {
     justify-content: center;
-    width: 50%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     text-align: justify;
+    margin-bottom: 1%;
+    padding-left: 25%;
   }
 
   body.dark #sidebar {
