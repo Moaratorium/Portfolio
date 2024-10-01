@@ -92,7 +92,7 @@ html {
 /* Sidebar */
 
 #sidebar {
-  width: 24vw;
+  width: 18vw;
   display: flex;
   position: sticky;
   height: 100vh;
@@ -120,10 +120,6 @@ html {
   padding-bottom: 0;
   padding-top: 0;
   line-height: 1;
-}
-
-#sidebar-caption {
-  width: 60%;
 }
 
 .fa-arrow-trend-up {
@@ -174,7 +170,7 @@ body.light #resume-link {
 }
 
 #parent {
-  width: 56vw;
+  width: 52vw;
   margin: auto;
   height: 100%;
   display: flex;
