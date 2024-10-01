@@ -393,12 +393,12 @@ body.light img {
 
   #sidebar nav {
     justify-content: center;
-    width: 40%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     text-align: justify;
     margin-bottom: 1%;
-    padding-left: 15%;
+    padding-left: 25%;
   }
 
   body.dark #sidebar {
