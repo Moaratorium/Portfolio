@@ -105,7 +105,25 @@ html {
 }
 
 #sidebar-head {
-  margin: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+#name-plate {
+  margin-bottom: 0;
+}
+
+#title-plate {
+  margin-top: 4%;
+  margin-bottom: 8%;
+  width: 100%;
+  padding-bottom: 0;
+  padding-top: 0;
+  line-height: 1;
+}
+
+#sidebar-caption {
+  width: 60%;
 }
 
 .fa-arrow-trend-up {
@@ -126,6 +144,8 @@ body.light #name-plate {
 
 #sidebar>nav>ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 body.dark nav {
