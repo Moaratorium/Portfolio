@@ -29,7 +29,7 @@ export default function Root() {
                 <Link to={config.datastore.linkedIn}><FontAwesomeIcon icon={faLinkedin} /> LinkedIn</Link>
               </li>
               <li>
-              <Link to={'pdf-view'}><FontAwesomeIcon icon={faArrowTrendUp} />Resume</Link>
+              <Link to={'pdf-view'}><FontAwesomeIcon icon={faArrowTrendUp} /> Resume</Link>
               </li>
             </ul>
           </nav>

@@ -92,7 +92,7 @@ html {
 /* Sidebar */
 
 #sidebar {
-  width: 18vw;
+  width: 24vw;
   display: flex;
   position: sticky;
   height: 100vh;
@@ -106,6 +106,10 @@ html {
 
 #sidebar-head {
   margin: 10%;
+}
+
+.fa-arrow-trend-up {
+  width: .8em;
 }
 
 #name-plate {
@@ -132,10 +136,9 @@ body.light nav {
   color: var(--title-text-light)
 }
 
-#resume-link {
-  padding-top: 5%;
-  padding-bottom: 5%;
-  text-align: center;
+.footer {
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 body.dark #resume-link {
@@ -160,14 +163,14 @@ body.light #resume-link {
 /* Global Detail */
 
 #detail {
-  width: 70%;
+  width: 55%;
   text-align: left;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5vh;
   display: flex;
-  padding-left: 6vw;
+  
 }
 
 #aboutme-text>p {

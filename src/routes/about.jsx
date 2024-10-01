@@ -17,10 +17,7 @@ export default function About() {
             <div id="project-list">
                 <ProjectList />
                 </div>
-                <div id="resume-link">
-                <Link to={'../pdf-view'}>Resume PDF Link<span> </span>
-                <FontAwesomeIcon icon={faArrowTrendUp} />
-                </Link>
+                <div className="footer">
                 </div>
         </div>
         </div>
