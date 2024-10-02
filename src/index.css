@@ -6,19 +6,19 @@
 
   color-scheme: dark light;
 
-  --background-dark: #282c34;
+  --background-dark: #0f172a;
   --background-light: #fafafa;
-  --text-dark: #abb2bf;
+  --text-dark: rgb(148, 163, 184);
   --text-light: #505050;
   --text-emphasis-dark: rgb(136, 243, 234);
   --text-emphasis-light: rgb(22, 77, 94);
-  --raised-dark: rgba(118, 143, 255, 0.082);
+  --raised-dark: rgba(77, 90, 146, 0.315);
   --raised-light: #748d9267;
   --border-dark: rgba(255, 255, 255, 0.63);
   --border-light: rgba(23, 48, 90, 0.582);
   --subheader-dark: #abb2bf;
   --subheader-light: #505050;
-  --title-text-dark: #fff;
+  --title-text-dark: rgb(226, 232, 240);
   --title-text-light: rgb(22, 77, 94);
 
   font-synthesis: none;
