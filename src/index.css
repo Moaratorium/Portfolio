@@ -15,10 +15,10 @@
   --background-light: #fafafa;
   --text-dark: rgb(148, 163, 184);
   --text-light: #505050;
-  --text-emphasis-dark: rgb(136, 243, 234);
+  --text-emphasis-dark: rgb(94 234 212);
   --text-emphasis-light: rgb(22, 77, 94);
-  --raised-dark: rgba(77, 90, 146, 0.315);
-  --raised-light: #748d9267;
+  --raised-dark: rgba(45,212,191,.1);
+  --raised-light: #afc6caa8;
   --border-dark: rgba(255, 255, 255, 0.63);
   --border-light: rgba(23, 48, 90, 0.582);
   --subheader-dark: #abb2bf;
@@ -268,7 +268,7 @@ a {
 }
 
 body.dark .project-details {
-  color: var(--subheader-dark)
+  color: var(--subheader-dark);
 }
 
 /* Tags */
@@ -277,7 +277,7 @@ body.dark .project-details {
   min-width: 30px;
   height: auto;
   padding: .3em;
-  border-radius: 30%;
+  border-radius: 40%;
   margin-right: 3px;
   font-size: .8rem;
   font-style: oblique;
@@ -292,12 +292,10 @@ body.dark .project-details {
 
 body.dark .tag {
   background-color: var(--raised-dark);
-  border: 1px solid var(--border-dark);
 }
 
 body.light .tag {
   background-color: var(--raised-light);
-  border: 1px solid var(--border-light);
   color: var(--text-emphasis-light);
 }
 
