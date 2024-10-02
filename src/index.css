@@ -1,24 +1,29 @@
+@font-face {
+  font-family: 'Inter';
+  src:url('/fonts/inter.woff2') format('woff2');
+}
+
 :root {
-  font-family: Helvetica, monospace, system-ui, Avenir, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 200;
-  font-size: 1em;
+  font-family: 'Inter', Helvetica, monospace, system-ui, Avenir, Arial, sans-serif;
+  line-height: 1.625;
+  font-weight: 400;
+  font-size: 1rem;
 
   color-scheme: dark light;
 
-  --background-dark: #282c34;
+  --background-dark: #0f172a;
   --background-light: #fafafa;
-  --text-dark: #abb2bf;
+  --text-dark: rgb(148, 163, 184);
   --text-light: #505050;
-  --text-emphasis-dark: rgb(136, 243, 234);
+  --text-emphasis-dark: rgb(94 234 212);
   --text-emphasis-light: rgb(22, 77, 94);
-  --raised-dark: rgba(118, 143, 255, 0.082);
-  --raised-light: #748d9267;
+  --raised-dark: rgba(45,212,191,.1);
+  --raised-light: #afc6caa8;
   --border-dark: rgba(255, 255, 255, 0.63);
   --border-light: rgba(23, 48, 90, 0.582);
   --subheader-dark: #abb2bf;
   --subheader-light: #505050;
-  --title-text-dark: #fff;
+  --title-text-dark: rgb(226, 232, 240);
   --title-text-light: rgb(22, 77, 94);
 
   font-synthesis: none;
@@ -185,7 +190,7 @@ body.light #resume-link {
 #detail {
   width: 55%;
   text-align: left;
-  justify-content: center;
+  justify-content: safe center;
   margin-left: auto;
   margin-right: 0;
   margin-top: 5vh;
@@ -263,7 +268,7 @@ a {
 }
 
 body.dark .project-details {
-  color: var(--subheader-dark)
+  color: var(--subheader-dark);
 }
 
 /* Tags */
@@ -272,7 +277,7 @@ body.dark .project-details {
   min-width: 30px;
   height: auto;
   padding: .3em;
-  border-radius: 30%;
+  border-radius: 40%;
   margin-right: 3px;
   font-size: .8rem;
   font-style: oblique;
@@ -287,12 +292,11 @@ body.dark .project-details {
 
 body.dark .tag {
   background-color: var(--raised-dark);
-  border: 1px solid var(--border-dark);
 }
 
 body.light .tag {
   background-color: var(--raised-light);
-  border: 1px solid var(--border-light);
+  color: var(--text-emphasis-light);
   color: var(--text-emphasis-light);
 }
 
