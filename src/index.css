@@ -297,7 +297,6 @@ body.dark .tag {
 body.light .tag {
   background-color: var(--raised-light);
   color: var(--text-emphasis-light);
-  color: var(--text-emphasis-light);
 }
 
 /* Dark Mode */
