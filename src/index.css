@@ -350,6 +350,7 @@ body.light img {
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
   }
 
   #sidebar {
