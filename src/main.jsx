@@ -9,6 +9,7 @@ import Root from "./routes/root";
 import ErrorPage from "./error-page";
 import PDFView from "./routes/pdf-view";
 import AboutMe from "./routes/about";
+import Projects from './routes/projects';
 import config from '../config.json';
 
 export function getTheme() {
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
         path:"/about",
         element: <AboutMe />
       },
+      {
+        path:"/projects",
+        element: <Projects />
+      }
     ]
   },
 ]); 
