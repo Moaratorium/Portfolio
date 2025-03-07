@@ -17,17 +17,14 @@ export function getTheme() {
     console.log('no theme')
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
       localStorage.setItem("theme", "light");
-      console.log('setting light theme')
     }
     else {
       localStorage.setItem("theme", "dark")
-      console.log('setting dark theme')
     }
   }
   let currentTheme = localStorage.getItem("theme");
   document.getElementById("body").classList.remove('light', 'dark')
   document.getElementById("body").classList.add(currentTheme);
-  console.log('setting class')
 }
 getTheme();
 
