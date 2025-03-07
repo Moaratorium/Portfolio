@@ -37,6 +37,32 @@
           "AWS"
         ]
       }
+    ],
+    "gallery": [
+      {
+        "id": "randy front-end",
+        "name": "Randy Music Bot v2 - Front-End",
+        "thumbnail": "",
+        "images": [],
+        "tagList": ["test"],
+        "description": "lorem ipsum"
+      },
+      {
+          "id": "randy back-end",
+          "name": "Randy Music Bot v2 - Back-End",
+          "thumbnail": "",
+          "images": [],
+          "tagList": ["test"],
+          "description": "lorem ipsum"
+      },
+      {
+        "id": "portfolio",
+        "name": "Moaratorium.xyz",
+        "thumbnail": "",
+        "images": [],
+        "tagList": ["test"],
+        "description": "lorem ipsum"
+     }
     ]
   }
 }
