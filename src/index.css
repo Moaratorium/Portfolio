@@ -209,6 +209,13 @@ body.light #resume-link {
   padding-bottom: 1%
 }
 
+.project-thumbnail { 
+  max-height: 20vh;
+  float: left;
+  padding-right: 3%;
+  padding-bottom: 1%
+}
+
 #pdfframe {
   height: 100%;
   width: 100%;
@@ -371,6 +378,13 @@ body.light img {
     float: none;
     max-height: 40vh;
     padding: 1%;
+  }
+
+  .project-thumbnail {
+    float: none;
+    max-height: 40vh;
+    padding: 1%;
+    margin-top: 5%;
   }
 
   #aboutme-text>p {

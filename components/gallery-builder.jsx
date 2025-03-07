@@ -7,6 +7,7 @@ export function GalleryBuilder() {
         galleryList.map(item => {
             return (
                 <div key={item.id} id={item.id}>
+                    <img className="project-thumbnail" src={item.thumbnail}></img>
                     <h2 className="project-header">{item.name}<br></br><div className="project-subheader"> role details </div></h2>
                     <p className="project-details" style={{ whiteSpace: 'pre-line' }}>{item.description}</p>
                     <div className="tag-holder">
