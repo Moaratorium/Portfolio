@@ -16,8 +16,9 @@
   --text-dark: rgb(148, 163, 184);
   --text-light: #505050;
   --text-emphasis-dark: rgb(94 234 212);
-  --text-emphasis-light: rgb(22, 77, 94);
+  --text-emphasis-light: rgb(10, 45, 56);
   --raised-dark: rgba(45,212,191,.1);
+  --modal-dark: rgb(26, 44, 44);
   --raised-light: #afc6caa8;
   --border-dark: rgba(255, 255, 255, 0.63);
   --border-light: rgba(23, 48, 90, 0.582);
@@ -321,12 +322,14 @@ body.light .tag {
 }
 
 .modal-content {
-  background-color: white;
+  background-color: var(--modal-dark);
+  color: var(--title-text-dark);
   padding: 20px;
   border-radius: 5px;
   max-width: 500px;
   width: 90%;
   position: relative;
+  height: 80%;
 }
 
 /* Dark Mode */
