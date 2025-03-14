@@ -7,13 +7,17 @@ export function GalleryBuilder() {
     const galleryList = config.datastore.gallery;
     return (
         galleryList.map(item => {
+            const [showModal, setShowModal] = useState(false);
+            const handleClose = () => {setShowModal(false)};
+            console.log(`at gallery level: ${showModal}`)
             return (
                 <div key={item.id} id={item.id} className="gallery-container">
                     <img className="project-thumbnail" src={item.thumbnail}></img>
                     <h2 className="project-header">{item.name}<br></br><div className="project-subheader"> role details </div></h2>
                     <p className="project-details" style={{ whiteSpace: 'pre-line' }}>{item.description}</p>
                     <div className="modal-holder">
-                    <ProjectModal project={item}></ProjectModal>
+                    <button className="details-button" onClick={() => setShowModal(true)}>Details</button>
+                    {showModal && <ProjectModal project={item} testShow={showModal} setShowModal={setShowModal} handleClose={handleClose}></ProjectModal>}
                     </div>
                 </div>
             )
