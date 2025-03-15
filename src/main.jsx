@@ -14,7 +14,6 @@ import config from '../config.json';
 
 export function getTheme() {
   if(!localStorage.getItem("theme")) {
-    console.log('no theme')
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
       localStorage.setItem("theme", "light");
     }

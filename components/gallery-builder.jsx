@@ -1,26 +1,21 @@
-import { TagMaker } from "./tag-maker";
 import config from '../config.json';
 import { ProjectModal } from "./modal";
 import { useState } from 'react'
 
-export function GalleryBuilder() {
-    const galleryList = config.datastore.gallery;
-    return (
-        galleryList.map(item => {
-            const [showModal, setShowModal] = useState(false);
-            const handleClose = () => {setShowModal(false)};
-            console.log(`at gallery level: ${showModal}`)
-            return (
-                <div key={item.id} id={item.id} className="gallery-container">
-                    <img className="project-thumbnail" src={item.thumbnail}></img>
-                    <h2 className="project-header">{item.name}<br></br><div className="project-subheader"> role details </div></h2>
-                    <p className="project-details" style={{ whiteSpace: 'pre-line' }}>{item.description}</p>
+export function GalleryBuilder({key, id, thumbnail, name, description, tagList}) {
+    const [showModal, setShowModal] = useState(false);
+    const handleClose = () => {setShowModal(false)};
+        return (
+            <>
+                <div key={key} id={id} className="gallery-card">
+                    <img className="project-thumbnail" src={thumbnail}></img>
+                    <h2 className="project-header">{name}<br></br><div className="project-subheader"> role details </div></h2>
+                    <p className="project-details" style={{ whiteSpace: 'pre-line' }}>{description}</p>
                     <div className="modal-holder">
                     <button className="details-button" onClick={() => setShowModal(true)}>Details</button>
-                    {showModal && <ProjectModal project={item} testShow={showModal} setShowModal={setShowModal} handleClose={handleClose}></ProjectModal>}
+                    {showModal && <ProjectModal name={name} showModal={showModal} setShowModal={setShowModal} handleClose={handleClose} tagList={tagList}></ProjectModal>}
                     </div>
                 </div>
+                </>
             )
-        })
-    )
 }

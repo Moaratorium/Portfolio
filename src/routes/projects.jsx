@@ -1,19 +1,22 @@
 import config from "../../config.json"
 import { GalleryBuilder } from "../../components/gallery-builder"
+import { useState } from 'react';
 
 export default function Projects() {
+    const galleryList = config.datastore.gallery;
+    const [projects, updateProjects] = useState(galleryList);
+    let counter = 0;
     return (
-        <div id="project-gallery">
-            <div id="work-history">
-                        <div id="project-list">
-                            <GalleryBuilder />
-                            </div>
-                            <div className="footer">
-                            </div>
-                    </div>
-        <div id="test-text" style={{ whiteSpace: 'break-spaces'}}>
-            <p>This is a test</p>
-        </div>
-        </div>
+        
+    projects.map(project => {
+        counter++;
+            return (
+                <>
+                <div key={counter} className="gallery-container">
+                                <GalleryBuilder key={counter} id={project.id} thumbnail={project.thumbnail} name={project.name} description={project.description} tagList={project.tagList}/>
+                                </div>
+                                </>
+            )
+                            })
     )
 };

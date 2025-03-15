@@ -15,10 +15,8 @@ export function ThemeToggle() {
     const onChangeAction = () => {
         if (localStorage.getItem('theme') == 'dark') {
             localStorage.setItem('theme', 'light')
-            console.log('test light')
         } else if (localStorage.getItem('theme')== 'light'){
             localStorage.setItem('theme', 'dark')
-            console.log('test dark')
         }
         window.location.reload();
     }

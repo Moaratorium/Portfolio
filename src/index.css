@@ -196,6 +196,7 @@ body.light #resume-link {
   margin-right: 0;
   margin-top: 5vh;
   display: flex;
+  flex-direction: column;
 }
 
 #aboutme-text>p {
@@ -332,8 +333,13 @@ body.light .tag {
   height: 80%;
 }
 
+.gallery-card {
+  margin: 1vw;
+}
+
 .gallery-container {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .details-button {
