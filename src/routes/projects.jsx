@@ -6,9 +6,9 @@ export default function Projects() {
     const galleryList = config.datastore.gallery;
     const [projects, updateProjects] = useState(galleryList);
     let counter = 0;
-    return (
-        
-    projects.map(project => {
+    return ( 
+    <div id="gallery-view">  
+    {projects.map(project => {
         counter++;
             return (
                 <>
@@ -17,6 +17,7 @@ export default function Projects() {
                                 </div>
                                 </>
             )
-                            })
+                            })}
+                            </div>
     )
 };
