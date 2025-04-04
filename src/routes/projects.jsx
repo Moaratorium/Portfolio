@@ -13,7 +13,15 @@ export default function Projects() {
             return (
                 <>
                 <div key={counter} className="gallery-container">
-                                <GalleryBuilder key={counter} id={project.id} thumbnail={project.thumbnail} name={project.name} description={project.description} tagList={project.tagList}/>
+                                <GalleryBuilder 
+                                    key={counter}
+                                    id={project.id} 
+                                    thumbnail={project.thumbnail} 
+                                    name={project.name}
+                                    images={project.images} 
+                                    description={project.description} 
+                                    tagList={project.tagList}
+                                    />
                                 </div>
                                 </>
             )

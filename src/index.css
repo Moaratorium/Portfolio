@@ -333,6 +333,53 @@ body.light .tag {
   height: 80%;
 }
 
+.dialog-panel {
+  height: 100%;
+}
+
+#image-pane {
+  z-index: 10;
+  height: 50%;
+  margin: 0 auto;
+  border: 1px solid white;
+  position: relative;
+  text-align: center;
+}
+
+.slider-image {
+  height: 100%;
+  width: auto;
+}
+
+.slider-button {
+  all: unset;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  padding: 1rem;
+  cursor: pointer;
+  transition: background-color 100ms ease-in-out;
+  border: 1px solid red;
+}
+
+.slider-button:hover {
+  background-color: rgb(0,0,0,0.2)
+}
+
+#slide-right {
+  right: 0;
+}
+
+#slide-left {
+  left: 0;
+}
+
+.slider-button > * {
+  width: 2rem;
+  height: 2rem;
+  stroke: white;
+}
+
 .project-header {
   margin-top: 0;
   padding: 0;

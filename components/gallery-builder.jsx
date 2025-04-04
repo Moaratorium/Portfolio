@@ -2,7 +2,7 @@ import config from '../config.json';
 import { ProjectModal } from "./modal";
 import { useState } from 'react'
 
-export function GalleryBuilder({key, id, thumbnail, name, description, tagList}) {
+export function GalleryBuilder({key, id, thumbnail, name, images, description, tagList}) {
     const [showModal, setShowModal] = useState(false);
     const handleClose = () => {setShowModal(false)};
         return (
@@ -13,7 +13,7 @@ export function GalleryBuilder({key, id, thumbnail, name, description, tagList})
                     <p className="project-details" style={{ whiteSpace: 'pre-line' }}>{description}</p>
                     <div className="modal-holder">
                     <button className="details-button" onClick={() => setShowModal(true)}>Details</button>
-                    {showModal && <ProjectModal name={name} showModal={showModal} setShowModal={setShowModal} handleClose={handleClose} tagList={tagList}></ProjectModal>}
+                    {showModal && <ProjectModal name={name} showModal={showModal} setShowModal={setShowModal} images={images} handleClose={handleClose} tagList={tagList}></ProjectModal>}
                     </div>
                 </div>
                 </>

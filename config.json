@@ -19,7 +19,15 @@
         "description": "Responsive Portfolio website designed to cleanly showcase myself to potential employers. Greenfield project developed in React with Vite & hosted on AWS. Implemented with client-side routing for speed, stability and scalability.\n\n Continuing development is focused on adding a tab showcasing project work and adding an asteroids game.",
         "role": "Developer",
         "time": "August 2024 - Present",
-        "tagList": ["HTML", "React.js", "React-Router", "Vite", "AWS", "Docker"]
+        "tagList": [
+          "HTML", 
+          "Javascript", 
+          "React.js", 
+          "React-Router", 
+          "Vite", 
+          "AWS", 
+          "Docker"
+        ]
       },
       {
         "id": "randallmusicbot",
@@ -29,7 +37,7 @@
         "time": "March 2023 - Present",
         "tagList": [
           "HTML",
-          "javascript",
+          "Javascript",
           "Discord.js",
           "Socket.io",
           "Bootstrap",
@@ -44,7 +52,13 @@
         "name": "Randy Music Bot v2 - Front-End",
         "thumbnail": "https://i.imgur.com/5ZJQvPX.jpeg",
         "images": [],
-        "tagList": ["test"],
+        "tagList": [
+          "HTML", 
+          "Javascript", 
+          "Vue", 
+          "Vue-Router", 
+          "Vite"
+        ],
         "description": "this is a triumph"
       },
       {
@@ -52,15 +66,27 @@
           "name": "Randy Music Bot v2 - Back-End",
           "thumbnail": "https://i.imgur.com/5ZJQvPX.jpeg",
           "images": [],
-          "tagList": ["test"],
+          "tagList": [
+            "Javascript", 
+            "Express", 
+            "Discord.js", 
+            "AWS"
+          ],
           "description": "lorem ipsum"
       },
       {
         "id": "portfolio",
         "name": "Moaratorium.xyz",
         "thumbnail": "https://i.imgur.com/5ZJQvPX.jpeg",
-        "images": [],
-        "tagList": ["test"],
+        "images": ["https://i.imgur.com/5ZJQvPX.jpeg", "https://i.imgur.com/hGUNvmV.jpeg"],
+        "tagList": [
+          "HTML", 
+          "React.js", 
+          "React-Router", 
+          "Vite", 
+          "AWS", 
+          "Docker"
+        ],
         "description": "lorem ipsum"
      }
     ]
