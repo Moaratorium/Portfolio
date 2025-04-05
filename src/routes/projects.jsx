@@ -1,6 +1,6 @@
 import config from "../../config.json"
 import { GalleryBuilder } from "../../components/gallery-builder"
-import { useState } from 'react';
+import { useState, Fragment } from 'react';
 
 export default function Projects() {
     const galleryList = config.datastore.gallery;
@@ -11,10 +11,9 @@ export default function Projects() {
     {projects.map(project => {
         counter++;
             return (
-                <>
-                <div key={counter} className="gallery-container">
+                <Fragment key={counter}>
+                <div className="gallery-container">
                                 <GalleryBuilder 
-                                    key={counter}
                                     id={project.id} 
                                     thumbnail={project.thumbnail} 
                                     name={project.name}
@@ -23,7 +22,7 @@ export default function Projects() {
                                     tagList={project.tagList}
                                     />
                                 </div>
-                                </>
+                                </Fragment>
             )
                             })}
                             </div>

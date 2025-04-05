@@ -11,7 +11,7 @@ export function ProjectModal({name, images, showModal, handleClose, tagList}) {
           <ImageSlider imageURL={images}></ImageSlider>
             <DialogTitle className="font-bold">{name}</DialogTitle>
             <Description>This is where the info goes, below I might put tags instead of on project tab</Description>
-            <TagMaker tags={tagList}></TagMaker>
+            <div className='tag-holder'><TagMaker tags={tagList}></TagMaker></div>
             <div className="close-button">
               <button onClick={() => handleClose()}>Close</button>
             </div>
