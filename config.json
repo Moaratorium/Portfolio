@@ -11,12 +11,29 @@
     "pdfLink": "./assets/oct24resume.pdf#view=FitH",
     "linkedIn": "https://www.linkedin.com/in/moaratorium/",
     "profileImageLink": "./assets/portraittemp2024_9_22.jpg",
-    "aboutText": "I've always been attracted to new technologies. Growing up in rainy Portland Oregon sustained by 90s anime and movies like The Matrix, it was imparted to me at a young age that digital 'is the future' yet also a kind of arcane sorcery that only a driven few can comprehend. I took apart Tomogachis and my Game Boy to see how they worked, modded Warcraft 3 and almost bricked my parents' computer messing with the Windows registry. \n\nFast forward a decade or two of building PCs for fun when the Groovy music bot for Discord was shut down my buddies were looking for an alternative. I knew a bit of javascript already and together with my now mentor, we got to building 'Randy' the Discord music bot and my first major coding project. While working on it in between shifts it clicked with me: 'If I enjoy learning so much, why am I not coding for a living?' \n\nI'm looking to get work experience in a field that is always growing and changing, and has a place for interesting new ideas. While not working, you can usually find me hanging out with my dogs, lamenting the lack of rain in Texas and desperately trying to hold onto my 6-star rating in Hunt: Showdown.",
+    "aboutText": "I've always been attracted to new technologies. Growing up in rainy Portland Oregon sustained by 90s anime and movies like The Matrix, it was imparted to me at a young age that digital 'is the future' yet also a kind of arcane sorcery that only a driven few can comprehend. I took apart Tomogachis and my Game Boy to see how they worked, modded Warcraft 3 and almost bricked my parents' computer messing with the Windows registry. \n\nFast forward a decade or two of building PCs for fun when the Groovy music bot for Discord was shut down my buddies were looking for an alternative. I knew a bit of javascript already and together with my now mentor, got to building my first major coding project: 'Randy' the Discord music bot. While coding in-between shifts it clicked with me: 'If I enjoy learning so much, why am I not coding for a living?' \n\nI'm looking to get work experience in a field that is always growing and changing, and has a place for interesting new ideas. While not working, you can usually find me hanging out with my dogs, lamenting the lack of rain in Texas and desperately trying to hold onto my 6-star rating in Hunt: Showdown.",
     "projects": [
+      {
+        "id": "randyv2",
+        "name": "Randy Music Bot - v2",
+        "description": "Discord music bot leveraging Lavalink that can play songs from Spotify, Soundcloud, Youtube and other common music platforms in voice channels for group listening using the Discord.js API. With an emphasis on speed, users can manipulate playback and song queues via chat commands, and multiple servers can be managed via a hosted webUI. Bot uses REST to manage communication between Discord, webUI and backend. \n \nDesigned a webUI that allows users to view and manipulate song queues for multiple servers. Constructed a series of emitters and receivers for data transfer to and from hosted server to web client. Implemented a series of slash commands for use in Discord text channels. \n \nContinuing development is focused on mobile friendly code refactoring and expanding features.",
+        "role": "Developer",
+        "time": "November 2024 - Present",
+        "tagList": [
+          "HTML",
+          "Javascript",
+          "Discord.js",
+          "Vue",
+          "Vue-Router",
+          "Express",
+          "REST",
+          "AWS"
+        ]
+      },
       {
         "id": "portfolio",
         "name": "Portfolio Website (Moaratorium.xyz)",
-        "description": "Responsive Portfolio website designed to cleanly showcase myself to potential employers. Greenfield project developed in React with Vite & hosted on AWS. Implemented with client-side routing for speed, stability and scalability.\n\n Continuing development is focused on adding a tab showcasing project work and adding an asteroids game.",
+        "description": "Responsive Portfolio website designed to cleanly showcase myself to potential employers. Greenfield project developed in React with Vite & hosted on AWS. Implemented with client-side routing for speed, stability and scalability.\n\n Continuing development is focused on adding accessability features and an asteroids game.",
         "role": "Developer",
         "time": "August 2024 - Present",
         "tagList": [
@@ -25,7 +42,8 @@
           "React.js", 
           "React-Router", 
           "Vite", 
-          "AWS", 
+          "AWS",
+          "nginx", 
           "Docker"
         ]
       },
@@ -67,7 +85,8 @@
           "thumbnail": "https://i.imgur.com/5ZJQvPX.jpeg",
           "images": [],
           "tagList": [
-            "Javascript", 
+            "Javascript",
+            "REST", 
             "Express", 
             "Discord.js", 
             "AWS"
@@ -84,7 +103,8 @@
           "React.js", 
           "React-Router", 
           "Vite", 
-          "AWS", 
+          "AWS",
+          "nginx", 
           "Docker"
         ],
         "description": "lorem ipsum"

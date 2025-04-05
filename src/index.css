@@ -233,7 +233,7 @@ iframe {
 }
 
 #aboutme-text {
-  padding-bottom: 4vh;
+  padding-bottom: 3vh;
 }
 
 /* Document Body */
@@ -381,7 +381,7 @@ body.light .tag {
 }
 
 .project-header {
-  margin-top: 0;
+  margin-top: 4vh;
   padding: 0;
   
 }
@@ -495,6 +495,8 @@ body.light img {
 
   .tag {
     font-size: .6em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 
   .project-details {
