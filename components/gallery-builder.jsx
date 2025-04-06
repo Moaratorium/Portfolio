@@ -9,7 +9,7 @@ export function GalleryBuilder({id, thumbnail, name, images, description, tagLis
             <>
                 <div key={id} id={id} className="gallery-card">
                     <img className="project-thumbnail" src={thumbnail}></img>
-                    <h2 className="project-header">{name}<br></br><div className="project-subheader"> role details </div></h2>
+                    <h2 className="project-header">{name}</h2>
                     <p className="project-details" style={{ whiteSpace: 'pre-line' }}>{description}</p>
                     <div className="modal-holder">
                     <button className="details-button" onClick={() => setShowModal(true)}>Details</button>
