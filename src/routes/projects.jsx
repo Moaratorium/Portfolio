@@ -20,6 +20,7 @@ export default function Projects() {
                                     images={project.images} 
                                     description={project.description} 
                                     tagList={project.tagList}
+                                    blurb={project.blurb}
                                     />
                                 </div>
                                 </Fragment>

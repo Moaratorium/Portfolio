@@ -386,7 +386,14 @@ body.light .tag {
 
 .description-box {
   height: 32%;
-  color: var(--text-dark)
+  color: var(--text-dark);
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.description-box::-webkit-scrollbar{
+  display: none;
 }
 
 .project-header {

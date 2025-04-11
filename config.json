@@ -77,7 +77,8 @@
           "Vue-Router", 
           "Vite"
         ],
-        "description": "Simple front-end designed to allow for a visualized queue outside of Discord chat commands and expanded features."
+        "description": "Simple front-end designed to allow for a visualized queue outside of Discord chat commands and expanded features.",
+        "blurb": "lorem ipsum"
       },
       {
           "id": "randy back-end",
@@ -91,7 +92,8 @@
             "Discord.js", 
             "AWS"
           ],
-          "description": "Speed-focused backend for Randy that utilizes Lavalink to stream to Discord servers."
+          "description": "Speed-focused backend for Randy that utilizes Lavalink to stream to Discord servers.",
+          "blurb": "Discord music bot leveraging Lavalink that can play songs from Spotify, Soundcloud, Youtube and other common music platforms in voice channels for group listening using the Discord.js API. With an emphasis on speed, users can manipulate playback and song queues via chat commands, and multiple servers can be managed via a hosted webUI. Bot uses REST to manage communication between Discord, webUI and backend. Implemented a series of slash commands for use in Discord text channels. Continuing development is focused on mobile friendly code refactoring and expanding features."
       },
       {
         "id": "portfolio",
@@ -107,7 +109,8 @@
           "nginx", 
           "Docker"
         ],
-        "description": "Portfolio website designed to showcase project work, resume and other socials."
+        "description": "Portfolio website designed to showcase project work, resume and other socials.",
+        "blurb": "lorem ipsum"
      }
     ]
   }
