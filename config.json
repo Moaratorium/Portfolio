@@ -78,7 +78,7 @@
           "Vite"
         ],
         "description": "Simple front-end designed to allow for a visualized queue outside of Discord chat commands and expanded features.",
-        "blurb": "lorem ipsum"
+        "blurb": "A simplified companion front-end to Randy Music bot's back-end designed to shed unused features from the original webUI and make space for future development. The webUI is developed in Vue.js and contains a visual queue, an easy to reference command list and allows for manipulation and addition of tracks when away from the discord client."
       },
       {
           "id": "randy back-end",
@@ -110,7 +110,7 @@
           "Docker"
         ],
         "description": "Portfolio website designed to showcase project work, resume and other socials.",
-        "blurb": "lorem ipsum"
+        "blurb": "A greenfield developer portfolio website aimed at showcasing experience, mission and socials in a clean, responsive and easy to read way. Developed in React using React-Router to handle routing, the web server is managed by NGINX and serves statically compiled html to users."
      }
     ]
   }
