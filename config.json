@@ -68,8 +68,8 @@
       {
         "id": "randy front-end",
         "name": "Randy Music Bot v2 - Front-End",
-        "thumbnail": "https://i.imgur.com/5ZJQvPX.jpeg",
-        "images": [],
+        "thumbnail": "/assets/frontendqueue1.png",
+        "images": ["/assets/frontendqueue1.png", "assets/frontendcommands1.png"],
         "tagList": [
           "HTML", 
           "Javascript", 
@@ -98,8 +98,8 @@
       {
         "id": "portfolio",
         "name": "Moaratorium.xyz",
-        "thumbnail": "https://i.imgur.com/5ZJQvPX.jpeg",
-        "images": ["https://i.imgur.com/5ZJQvPX.jpeg", "https://i.imgur.com/hGUNvmV.jpeg", "https://i.imgur.com/QjeB49K.jpeg"],
+        "thumbnail": "/assets/portfoliosplash.png",
+        "images": ["/assets/portfoliosplash.png" ,"/assets/portfoliofilestructure.png"],
         "tagList": [
           "HTML", 
           "React.js", 

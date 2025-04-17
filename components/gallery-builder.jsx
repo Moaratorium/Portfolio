@@ -9,7 +9,9 @@ export function GalleryBuilder({id, thumbnail, name, images, description, tagLis
             <>
                 <div key={id} id={id} className="gallery-card">
                     <div className="project-info-container">
-                    <img className="project-thumbnail" src={thumbnail}></img>
+                        <div className="project-thumb-container">
+                            <img className="project-thumbnail" src={thumbnail}></img>
+                            </div>
                     <h2 className="project-header">{name}</h2>
                     <p className="project-details" style={{ whiteSpace: 'pre-line' }}>{description}</p>
                     </div>
