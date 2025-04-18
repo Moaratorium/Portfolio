@@ -110,7 +110,7 @@
           "Docker"
         ],
         "description": "Portfolio website designed to showcase project work, resume and other socials.",
-        "blurb": "A greenfield developer portfolio website aimed at showcasing experience, mission and socials in a clean, responsive and easy to read way. Developed in React using React-Router to handle routing, the web server is managed by NGINX and serves statically compiled html to users."
+        "blurb": "A greenfield developer portfolio website aimed at showcasing experience, mission and socials in a clean, responsive and easy to read way. Developed in React using React-Router to handle routing, the web server is managed by NGINX and serves statically compiled html to users and functions as a reverse proxy."
      }
     ]
   }
