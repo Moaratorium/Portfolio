@@ -8,28 +8,54 @@
     "blogLink": "https://substack.com/@moaratorium",
     "blogName": "Substack",
     "githubLink": "https://github.com/Moaratorium",
-    "pdfLink": "./assets/oct24resume.pdf#view=FitH",
+    "pdfLink": "./assets/april25TechResume.pdf#view=FitH",
     "linkedIn": "https://www.linkedin.com/in/moaratorium/",
     "profileImageLink": "./assets/portraittemp2024_9_22.jpg",
-    "aboutText": "I've always been attracted to new technologies. Growing up in rainy Portland Oregon sustained by 90s anime and movies like The Matrix, it was imparted to me at a young age that digital 'is the future' yet also a kind of arcane sorcery that only a driven few can comprehend. I took apart Tomogachis and my Game Boy to see how they worked, modded Warcraft 3 and almost bricked my parents' computer messing with the Windows registry. \n\nFast forward a decade or two of building PCs for fun when the Groovy music bot for Discord was shut down my buddies were looking for an alternative. I knew a bit of javascript already and together with my now mentor, we got to building 'Randy' the Discord music bot and my first major coding project. While working on it in between shifts it clicked with me: 'If I enjoy learning so much, why am I not coding for a living?' \n\nI'm looking to get work experience in a field that is always growing and changing, and has a place for interesting new ideas. While not working, you can usually find me hanging out with my dogs, lamenting the lack of rain in Texas and desperately trying to hold onto my 6-star rating in Hunt: Showdown.",
+    "aboutText": "I've always been attracted to new technologies. Growing up in rainy Portland Oregon sustained by 90s anime and movies like The Matrix, it was imparted to me at a young age that digital 'is the future' yet also a kind of arcane sorcery that only a driven few can comprehend. I took apart Tomogachis and my Game Boy to see how they worked, modded Warcraft 3 and almost bricked my parents' computer messing with the Windows registry. \n\nFast forward a decade or two of building PCs for fun when the Groovy music bot for Discord was shut down my buddies were looking for an alternative. I knew a bit of javascript already and together with my now mentor, got to building my first major coding project: 'Randy' the Discord music bot. While coding in-between shifts it clicked with me: 'If I enjoy learning so much, why am I not coding for a living?' \n\nI'm looking to get work experience in a field that is always growing and changing, and has a place for interesting new ideas. While not working, you can usually find me hanging out with my dogs, lamenting the lack of rain in Texas and desperately trying to hold onto my 6-star rating in Hunt: Showdown.",
     "projects": [
+      {
+        "id": "randyv2",
+        "name": "Randy Music Bot - v2",
+        "description": "Discord music bot leveraging Lavalink that can play songs from Spotify, Soundcloud, Youtube and other common music platforms in voice channels for group listening using the Discord.js API. With an emphasis on speed, users can manipulate playback and song queues via chat commands, and multiple servers can be managed via a hosted webUI. Bot uses REST to manage communication between Discord, webUI and backend. \n \nDesigned a webUI that allows users to view and manipulate song queues for multiple servers. Constructed a series of emitters and receivers for data transfer to and from hosted server to web client. Implemented a series of slash commands for use in Discord text channels. \n \nContinuing development is focused on mobile friendly code refactoring and expanding features.",
+        "role": "Developer",
+        "time": "November 2024 - Present",
+        "tagList": [
+          "HTML",
+          "Javascript",
+          "Discord.js",
+          "Vue",
+          "Vue-Router",
+          "Express",
+          "REST",
+          "AWS"
+        ]
+      },
       {
         "id": "portfolio",
         "name": "Portfolio Website (Moaratorium.xyz)",
-        "description": "Responsive Portfolio website designed to cleanly showcase myself to potential employers. Greenfield project developed in React with Vite & hosted on AWS. Implemented with client-side routing for speed, stability and scalability.\n\n Continuing development is focused on adding a tab showcasing project work and adding an asteroids game.",
+        "description": "Responsive Portfolio website designed to cleanly showcase myself to potential employers. Greenfield project developed in React with Vite & hosted on AWS. Implemented with client-side routing for speed, stability and scalability.\n\n Continuing development is focused on adding accessability features and an asteroids game.",
         "role": "Developer",
         "time": "August 2024 - Present",
-        "tagList": ["HTML", "React.js", "React-Router", "Vite", "AWS", "Docker"]
+        "tagList": [
+          "HTML", 
+          "Javascript", 
+          "React.js", 
+          "React-Router", 
+          "Vite", 
+          "AWS",
+          "NGINX", 
+          "Docker"
+        ]
       },
       {
         "id": "randallmusicbot",
         "name": "Randall Discord Bot",
-        "description": "Discord music bot leveraging Lavalink that can play songs from Spotify, Soundcloud, Youtube and other common music platforms in voice channels for group listening using the Discord.js API. Users can manipulate playback and song queues via chat commands, and multiple servers can be managed via a hosted webUI. Bot uses Socket.io to manage server to webUI communication. \n \nDesigned a webUI that allows users to view and manipulate song queues for multiple servers. Constructed a series of emitters and receivers for data transfer to and from hosted server to web client. Implemented a series of slash commands for use in Discord text channels. \n \nContinuing development is focused on a mobile friendly code refactor and framework transition to Vue.js and Vite.",
+        "description": "Discord music bot leveraging Lavalink that can play songs from Spotify, Soundcloud, Youtube and other common music platforms in voice channels for group listening using the Discord.js API. Users can manipulate playback and song queues via chat commands, and multiple servers can be managed via a hosted webUI. Bot uses Socket.io to manage server to webUI communication. \n \nDesigned a webUI that allows users to view and manipulate song queues for multiple servers. Constructed a series of emitters and receivers for data transfer to and from hosted server to web client. Implemented a series of slash commands for use in Discord text channels. \n \nDeprecated for rebuild.",
         "role": "Developer",
-        "time": "March 2023 - Present",
+        "time": "March 2023 - November 2024",
         "tagList": [
           "HTML",
-          "javascript",
+          "Javascript",
           "Discord.js",
           "Socket.io",
           "Bootstrap",
@@ -37,6 +63,55 @@
           "AWS"
         ]
       }
+    ],
+    "gallery": [
+      {
+        "id": "randy front-end",
+        "name": "Randy Music Bot v2 - Front-End",
+        "thumbnail": "/assets/frontendqueue1.png",
+        "images": ["/assets/frontendqueue1.png", "assets/frontendcommands1.png"],
+        "tagList": [
+          "HTML", 
+          "Javascript", 
+          "Vue", 
+          "Vue-Router", 
+          "Vite"
+        ],
+        "description": "Simple front-end designed to allow for a visualized queue outside of Discord chat commands and expanded features.",
+        "blurb": "A simplified companion front-end to Randy Music bot's back-end designed to shed unused features from the original webUI and make space for future development. The webUI is developed in Vue.js and contains a visual queue, an easy to reference command list and allows for manipulation and addition of tracks when away from the discord client."
+      },
+      {
+          "id": "randy back-end",
+          "name": "Randy Music Bot v2 - Back-End",
+          "thumbnail": "/assets/backendoutput1.png",
+          "images": ["/assets/backendfilestructure1.png", "/assets/backendoutput1.png", "/assets/backendoutput2.png"],
+          "tagList": [
+            "Javascript",
+            "REST", 
+            "Express", 
+            "Discord.js", 
+            "AWS"
+          ],
+          "description": "Speed-focused backend for Randy that utilizes Lavalink to stream to Discord servers.",
+          "blurb": "Discord music bot leveraging Lavalink that can play songs from Spotify, Soundcloud, Youtube and other common music platforms in voice channels for group listening using the Discord.js API. With an emphasis on speed, users can manipulate playback and song queues via chat commands, and multiple servers can be managed via a hosted webUI. Bot uses REST to manage communication between Discord, webUI and backend. Implemented a series of slash commands for use in Discord text channels. Continuing development is focused on mobile friendly code refactoring and expanding features."
+      },
+      {
+        "id": "portfolio",
+        "name": "Moaratorium.xyz",
+        "thumbnail": "/assets/portfoliosplash.png",
+        "images": ["/assets/portfoliosplash.png" ,"/assets/portfoliofilestructure.png"],
+        "tagList": [
+          "HTML", 
+          "React.js", 
+          "React-Router", 
+          "Vite", 
+          "AWS",
+          "nginx", 
+          "Docker"
+        ],
+        "description": "Portfolio website designed to showcase project work, resume and other socials.",
+        "blurb": "A greenfield developer portfolio website aimed at showcasing experience, mission and socials in a clean, responsive and easy to read way. Developed in React using React-Router to handle routing, the web server is managed by NGINX and serves statically compiled html to users and functions as a reverse proxy."
+     }
     ]
   }
 }

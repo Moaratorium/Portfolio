@@ -2,7 +2,7 @@ import { Outlet, Link } from "react-router-dom";
 import { ThemeToggle } from "../../components/theme-toggle";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faSquarePen, faBook, faArrowTrendUp } from "@fortawesome/free-solid-svg-icons"
+import { faSquarePen, faBook, faArrowTrendUp, faWrench } from "@fortawesome/free-solid-svg-icons"
 import config from '../../config.json';
 
 export default function Root() {
@@ -18,6 +18,9 @@ export default function Root() {
             <ul>
               <li>
                 <Link to={'about'}><FontAwesomeIcon icon={faBook} /> About</Link>
+              </li>
+              <li>
+                <Link to={'projects'}><FontAwesomeIcon icon={faWrench} /> Projects</Link>
               </li>
             <li>
                 <Link to={config.datastore.githubLink} ><FontAwesomeIcon icon={faSquareGithub} /> GitHub</Link>
